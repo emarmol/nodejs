@@ -24,12 +24,12 @@ app.get('/', function(request, response) {
 
 /*Post data*/
 app.post('/sendLocation', function(request, response){
-	var login = request.body.login;
-	var lat = request.body.lat;
-	var lng = request.body.lng;
+	var login,lat,lng;
+	//var login = request.body.login;
+	//var lat = request.body.lat;
+	//var lng = request.body.lng;
 	var created_at = new Date;
-	console.log("it's posting?");
-	/*	var toInsert = {
+	var toInsert = {
 	    "login": login,
 	    "lat": lat,
 	    "lng": lng,
@@ -45,7 +45,7 @@ app.post('/sendLocation', function(request, response){
 			    response.send(200);
 			}
 		    });
-		    });*/
+	    });
 });
 
 app.get('/cool', function(request, response) {
