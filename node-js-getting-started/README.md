@@ -1,39 +1,16 @@
-# node-js-getting-started
+1.Identify what aspects of the work have been correctly implemented and what have not.
+	   Correct aspects:
+	   	   -POST /sendLocation works properly, and checks that all fields have been submitted before inserting the new field into the database.
+		   -POST /sendLocation returns a JSON string with the people in the database, and the locations within 1 mile of the lat/lng
+		   -GET /checkins.json returns all records for a given login in the query of the url. Checks to make sure the login has been provided
+		   -GET / home page shows all the users who have checked in and when
+		   -The above have been pushed onto Heroku online and are functional
+		   -Assignment 2 master branch uses Assignment 3's server
+	   To improve:
+		   -Although security wasn't a requirement for this assignment, the solution to making sure login's weren't empty fields could be improved
 
-A barebones Node.js app using [Express 4](http://expressjs.com/).
+2.Identify anyone with whom you have collaborated or discussed the assignment.
+	   I worked with Jorge Anton and discussed with John Koh
 
-This application supports the [Getting Started with Node on Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs) article - check it out.
-
-## Running Locally
-
-Make sure you have [Node.js](http://nodejs.org/) and the [Heroku Toolbelt](https://toolbelt.heroku.com/) installed.
-
-```sh
-$ git clone git@github.com:heroku/node-js-getting-started.git # or clone your own fork
-$ cd node-js-getting-started
-$ npm install
-$ npm start
-```
-
-Your app should now be running on [localhost:5000](http://localhost:5000/).
-
-## Deploying to Heroku
-
-```
-$ heroku create
-$ git push heroku master
-$ heroku open
-```
-or
-
-[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
-
-## Documentation
-
-For more information about using Node.js on Heroku, see these Dev Center articles:
-
-- [Getting Started with Node.js on Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs)
-- [Heroku Node.js Support](https://devcenter.heroku.com/articles/nodejs-support)
-- [Node.js on Heroku](https://devcenter.heroku.com/categories/nodejs)
-- [Best Practices for Node.js Development](https://devcenter.heroku.com/articles/node-best-practices)
-- [Using WebSockets on Heroku with Node.js](https://devcenter.heroku.com/articles/node-websockets)
+3.Say approximately how many hours you have spent completing the assignment.
+           I worked approximately 7  hours
